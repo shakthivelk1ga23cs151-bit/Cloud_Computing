@@ -1,0 +1,58 @@
+
+// Displays the installed Trivy version.
+Step 1: trivy --version
+
+1) For File System
+// Scans the current directory for vulnerabilities, secrets, and misconfigurations and displays in the terminal
+Step 1: trivy fs --scanners vuln,secret,misconfig .
+
+// Performs a full security scan and generates an HTML report.
+Step 2:trivy fs --format template --template "@html.tpl" -o fullscan-report.html --scanners vuln,secret,misconfig .
+
+// Scans only for hardcoded secrets and generates an HTML report.
+Step 3:tetrivy fs --scanners secret --format template --template "@html.tpl" -o secret-report.html . 
+
+// Scans only for infrastructure misconfigurations and generates an HTML report.
+Step 4:trivy fs --scanners misconfig --format template --template "@html.tpl" -o misconfig-report.html . 
+
+// Scans only for dependency vulnerabilities and generates an HTML report.
+Step 5:trivy fs --scanners vuln --format template --template "@html.tpl" -o vuln-report.html .
+
+2)Scan a Docker image
+
+// Start Docker engine to enable image building and scanning.
+Step 1: Run Docker Desktop
+
+// Builds a Docker image named trivy:latest from the current directory.
+Step 2:docker build -t trivy .
+
+// Performs a complete security scan of the Docker image and generates an HTML report.
+Step 3:trivy image --format template --template "@html.tpl" -o docfullscan.html --scanners vuln,secret,misconfig trivy:latest
+
+// Scans the Docker image only for hardcoded secrets.
+Step 4:trivy image --format template --template "@html.tpl" -o docsec.html --scanners secret trivy:latest
+
+// Scans the Docker image only for configuration security issues.
+Step 5:trivy image --format template --template "@html.tpl" -o docmiss.html --scanners misconfig trivy:latest
+
+// Scans the Docker image only for package and OS vulnerabilities.
+Step 6:trivy image --format template --template "@html.tpl" -o docvul.html --scanners vuln trivy:latest
+
+
+// For GitHub
+
+// Scans the Repo for vulnerabilities, secrets, and misconfigurations and displays in the terminal 
+Step 1: trivy repo --scanners vuln,misconfig,secret https://github.com/Shakthivelk24/Automated-Attendance-System-
+
+// Performs a full security scan and generates an HTML report.
+Step 2:trivy repo --format template --template "@html.tpl" -o gitFullscan-report.html --scanners vuln,secret,misconfig https://github.com/Shakthivelk24/Backend_Programs
+
+// Scans only for hardcoded secrets and generates an HTML report.
+Step 3:trivy repo --format template --template "@html.tpl" -o gitsec-report.html --scanners secret https://github.com/Shakthivelk24/Backend_Programs
+
+// Scans only for infrastructure misconfigurations and generates an HTML report.
+Step 4:trivy repo --format template --template "@html.tpl" -o gitmiss-report.html --scanners misconfig https://github.com/Shakthivelk24/Backend_Programs
+
+// Scans only for dependency vulnerabilities and generates an HTML report.
+Step 5:trivy repo --format template --template "@html.tpl" -o gitvul-report.html --scanners vuln https://github.com/Shakthivelk24/Backend_Programs
+

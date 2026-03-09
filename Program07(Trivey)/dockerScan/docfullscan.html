@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trivy Security Report</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+h1 {
+  color: #2c3e50;
+}
+h2 {
+  margin-top: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+}
+.severity-CRITICAL { color: white; background-color: #c0392b; font-weight: bold; }
+.severity-HIGH { color: white; background-color: #e67e22; font-weight: bold; }
+.severity-MEDIUM { background-color: #f1c40f; }
+.severity-LOW { background-color: #2ecc71; }
+</style>
+</head>
+<body>
+
+<h1>Trivy Security Report</h1>
+
+
+
+
+
+<!-- ================= VULNERABILITIES ================= -->
+
+<h1>Vulnerabilities</h1>
+<h2>trivy:latest (debian 13.1)</h2>
+<table>
+<tr>
+<th>Library</th>
+<th>ID</th>
+<th>Severity</th>
+<th>Installed</th>
+<th>Fixed</th>
+<th>Title</th>
+</tr>
+
+<tr>
+<td>apt</td>
+<td>CVE-2011-3374</td>
+<td class="severity-LOW">LOW</td>
+<td>3.0.3</td>
+<td></td>
+<td>It was found that apt-key in apt, all versions, do not correctly valid ...</td>
+</tr>
+
+<tr>
+<td>bash</td>
+<td>TEMP-0841856-B18BAF</td>
+<td class="severity-LOW">LOW</td>
+<td>5.2.37-2+b5</td>
+<td></td>
+<td>[Privilege escalation possible to other user than root]</td>
+</tr>
+
+<tr>
+<td>bsdutils</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>1:2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>bsdutils</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>1:2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>bsdutils</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>1:2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>coreutils</td>
+<td>CVE-2017-18018</td>
+<td class="severity-LOW">LOW</td>
+<td>9.7-3</td>
+<td></td>
+<td>coreutils: race condition vulnerability in chown and chgrp</td>
+</tr>
+
+<tr>
+<td>coreutils</td>
+<td>CVE-2025-5278</td>
+<td class="severity-LOW">LOW</td>
+<td>9.7-3</td>
+<td></td>
+<td>coreutils: Heap Buffer Under-Read in GNU Coreutils sort via Key Specification</td>
+</tr>
+
+<tr>
+<td>libapt-pkg7.0</td>
+<td>CVE-2011-3374</td>
+<td class="severity-LOW">LOW</td>
+<td>3.0.3</td>
+<td></td>
+<td>It was found that apt-key in apt, all versions, do not correctly valid ...</td>
+</tr>
+
+<tr>
+<td>libblkid1</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>libblkid1</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>libblkid1</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2026-0861</td>
+<td class="severity-HIGH">HIGH</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: Integer overflow in memalign leads to heap corruption</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2025-15281</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2026-0915</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: glibc: Information disclosure via zero-valued network query</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2010-4756</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2018-20796</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2019-1010022</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: stack guard protection bypass</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2019-1010023</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: running ldd on malicious ELF leads to code execution because of wrong size computation</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2019-1010024</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: ASLR bypass using cache of thread stack and heap</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2019-1010025</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: information disclosure of heap addresses of pthread_created thread</td>
+</tr>
+
+<tr>
+<td>libc-bin</td>
+<td>CVE-2019-9192</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2026-0861</td>
+<td class="severity-HIGH">HIGH</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: Integer overflow in memalign leads to heap corruption</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2025-15281</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: wordexp with WRDE_REUSE and WRDE_APPEND may return uninitialized memory</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2026-0915</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: glibc: Information disclosure via zero-valued network query</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2010-4756</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: glob implementation can cause excessive CPU and memory consumption due to crafted glob expressions</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2018-20796</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2019-1010022</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: stack guard protection bypass</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2019-1010023</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: running ldd on malicious ELF leads to code execution because of wrong size computation</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2019-1010024</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: ASLR bypass using cache of thread stack and heap</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2019-1010025</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: information disclosure of heap addresses of pthread_created thread</td>
+</tr>
+
+<tr>
+<td>libc6</td>
+<td>CVE-2019-9192</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-12</td>
+<td></td>
+<td>glibc: uncontrolled recursion in function check_dst_limits_calc_pos_1 in posix/regexec.c</td>
+</tr>
+
+<tr>
+<td>liblastlog2-2</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>liblastlog2-2</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>liblastlog2-2</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>libmount1</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>libmount1</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>libmount1</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>libncursesw6</td>
+<td>CVE-2025-6141</td>
+<td class="severity-LOW">LOW</td>
+<td>6.5+20250216-2</td>
+<td></td>
+<td>gnu-ncurses: ncurses Stack Buffer Overflow</td>
+</tr>
+
+<tr>
+<td>libsmartcols1</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>libsmartcols1</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>libsmartcols1</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>libsqlite3-0</td>
+<td>CVE-2025-7709</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.46.1-7</td>
+<td></td>
+<td>An integer overflow exists in the  FTS5 https://sqlite.org/fts5.html e ...</td>
+</tr>
+
+<tr>
+<td>libsqlite3-0</td>
+<td>CVE-2021-45346</td>
+<td class="severity-LOW">LOW</td>
+<td>3.46.1-7</td>
+<td></td>
+<td>sqlite: crafted SQL query allows a malicious user to obtain sensitive information</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-15467</td>
+<td class="severity-CRITICAL">CRITICAL</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-69419</td>
+<td class="severity-HIGH">HIGH</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-69421</td>
+<td class="severity-HIGH">HIGH</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-11187</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-15468</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via NULL pointer dereference in QUIC protocol handling</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-15469</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Data integrity bypass in `openssl dgst` command due to silent truncation</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-66199</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to excessive memory allocation in TLS 1.3 certificate compression</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-68160</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-69418</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2025-69420</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via malformed TimeStamp Response</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2026-22795</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing</td>
+</tr>
+
+<tr>
+<td>libssl3t64</td>
+<td>CVE-2026-22796</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification</td>
+</tr>
+
+<tr>
+<td>libsystemd0</td>
+<td>CVE-2013-4392</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>systemd: TOCTOU race condition when updating file permissions and SELinux security contexts</td>
+</tr>
+
+<tr>
+<td>libsystemd0</td>
+<td>CVE-2023-31437</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>An issue was discovered in systemd 253. An attacker can modify a seale ...</td>
+</tr>
+
+<tr>
+<td>libsystemd0</td>
+<td>CVE-2023-31438</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>An issue was discovered in systemd 253. An attacker can truncate a sea ...</td>
+</tr>
+
+<tr>
+<td>libsystemd0</td>
+<td>CVE-2023-31439</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>An issue was discovered in systemd 253. An attacker can modify the con ...</td>
+</tr>
+
+<tr>
+<td>libtinfo6</td>
+<td>CVE-2025-6141</td>
+<td class="severity-LOW">LOW</td>
+<td>6.5+20250216-2</td>
+<td></td>
+<td>gnu-ncurses: ncurses Stack Buffer Overflow</td>
+</tr>
+
+<tr>
+<td>libudev1</td>
+<td>CVE-2013-4392</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>systemd: TOCTOU race condition when updating file permissions and SELinux security contexts</td>
+</tr>
+
+<tr>
+<td>libudev1</td>
+<td>CVE-2023-31437</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>An issue was discovered in systemd 253. An attacker can modify a seale ...</td>
+</tr>
+
+<tr>
+<td>libudev1</td>
+<td>CVE-2023-31438</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>An issue was discovered in systemd 253. An attacker can truncate a sea ...</td>
+</tr>
+
+<tr>
+<td>libudev1</td>
+<td>CVE-2023-31439</td>
+<td class="severity-LOW">LOW</td>
+<td>257.8-1~deb13u2</td>
+<td></td>
+<td>An issue was discovered in systemd 253. An attacker can modify the con ...</td>
+</tr>
+
+<tr>
+<td>libuuid1</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>libuuid1</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>libuuid1</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>login</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>1:4.16.0-2+really2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>login</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.16.0-2+really2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>login</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.16.0-2+really2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>login.defs</td>
+<td>CVE-2007-5686</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.17.4-2</td>
+<td></td>
+<td>initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...</td>
+</tr>
+
+<tr>
+<td>login.defs</td>
+<td>CVE-2024-56433</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.17.4-2</td>
+<td></td>
+<td>shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise</td>
+</tr>
+
+<tr>
+<td>login.defs</td>
+<td>TEMP-0628843-DBAD28</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.17.4-2</td>
+<td></td>
+<td>[more related to CVE-2005-4890]</td>
+</tr>
+
+<tr>
+<td>mount</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>mount</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>mount</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>ncurses-base</td>
+<td>CVE-2025-6141</td>
+<td class="severity-LOW">LOW</td>
+<td>6.5+20250216-2</td>
+<td></td>
+<td>gnu-ncurses: ncurses Stack Buffer Overflow</td>
+</tr>
+
+<tr>
+<td>ncurses-bin</td>
+<td>CVE-2025-6141</td>
+<td class="severity-LOW">LOW</td>
+<td>6.5+20250216-2</td>
+<td></td>
+<td>gnu-ncurses: ncurses Stack Buffer Overflow</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-15467</td>
+<td class="severity-CRITICAL">CRITICAL</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-69419</td>
+<td class="severity-HIGH">HIGH</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-69421</td>
+<td class="severity-HIGH">HIGH</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-11187</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-15468</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via NULL pointer dereference in QUIC protocol handling</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-15469</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Data integrity bypass in `openssl dgst` command due to silent truncation</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-66199</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to excessive memory allocation in TLS 1.3 certificate compression</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-68160</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-69418</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2025-69420</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via malformed TimeStamp Response</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2026-22795</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing</td>
+</tr>
+
+<tr>
+<td>openssl</td>
+<td>CVE-2026-22796</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-15467</td>
+<td class="severity-CRITICAL">CRITICAL</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-69419</td>
+<td class="severity-HIGH">HIGH</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Arbitrary code execution due to out-of-bounds write in PKCS#12 processing</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-69421</td>
+<td class="severity-HIGH">HIGH</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-11187</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Arbitrary code execution or denial of service through crafted PKCS#12 file</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-15468</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via NULL pointer dereference in QUIC protocol handling</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-15469</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Data integrity bypass in `openssl dgst` command due to silent truncation</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-66199</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to excessive memory allocation in TLS 1.3 certificate compression</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-68160</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to out-of-bounds write in BIO filter</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-69418</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Information disclosure and data tampering via specific low-level OCB encryption/decryption calls</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2025-69420</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via malformed TimeStamp Response</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2026-22795</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service due to type confusion in PKCS#12 file processing</td>
+</tr>
+
+<tr>
+<td>openssl-provider-legacy</td>
+<td>CVE-2026-22796</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>3.5.1-1+deb13u1</td>
+<td>3.5.4-1~deb13u2</td>
+<td>openssl: OpenSSL: Denial of Service via type confusion in PKCS#7 signature verification</td>
+</tr>
+
+<tr>
+<td>passwd</td>
+<td>CVE-2007-5686</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.17.4-2</td>
+<td></td>
+<td>initscripts in rPath Linux 1 sets insecure permissions for the /var/lo ...</td>
+</tr>
+
+<tr>
+<td>passwd</td>
+<td>CVE-2024-56433</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.17.4-2</td>
+<td></td>
+<td>shadow-utils: Default subordinate ID configuration in /etc/login.defs could lead to compromise</td>
+</tr>
+
+<tr>
+<td>passwd</td>
+<td>TEMP-0628843-DBAD28</td>
+<td class="severity-LOW">LOW</td>
+<td>1:4.17.4-2</td>
+<td></td>
+<td>[more related to CVE-2005-4890]</td>
+</tr>
+
+<tr>
+<td>perl-base</td>
+<td>CVE-2011-4116</td>
+<td class="severity-LOW">LOW</td>
+<td>5.40.1-6</td>
+<td></td>
+<td>perl: File:: Temp insecure temporary file handling</td>
+</tr>
+
+<tr>
+<td>sysvinit-utils</td>
+<td>TEMP-0517018-A83CE6</td>
+<td class="severity-LOW">LOW</td>
+<td>3.14-4</td>
+<td></td>
+<td>[sysvinit: no-root option in expert installer exposes locally exploitable security flaw]</td>
+</tr>
+
+<tr>
+<td>tar</td>
+<td>CVE-2005-2541</td>
+<td class="severity-LOW">LOW</td>
+<td>1.35+dfsg-3.1</td>
+<td></td>
+<td>tar: does not properly warn the user when extracting setuid or setgid files</td>
+</tr>
+
+<tr>
+<td>tar</td>
+<td>TEMP-0290435-0B57B5</td>
+<td class="severity-LOW">LOW</td>
+<td>1.35+dfsg-3.1</td>
+<td></td>
+<td>[tar's rmt command may have undesired side effects]</td>
+</tr>
+
+<tr>
+<td>util-linux</td>
+<td>CVE-2025-14104</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Heap buffer overread in setpwnam() when processing 256-byte usernames</td>
+</tr>
+
+<tr>
+<td>util-linux</td>
+<td>CVE-2022-0563</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: partial disclosure of arbitrary files in chfn and chsh when compiled with libreadline</td>
+</tr>
+
+<tr>
+<td>util-linux</td>
+<td>CVE-2026-3184</td>
+<td class="severity-LOW">LOW</td>
+<td>2.41-5</td>
+<td></td>
+<td>util-linux: util-linux: Access control bypass due to improper hostname canonicalization</td>
+</tr>
+
+<tr>
+<td>zlib1g</td>
+<td>CVE-2026-27171</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>1:1.3.dfsg+really1.3.1-1+b1</td>
+<td></td>
+<td>zlib: zlib: Denial of Service via infinite loop in CRC32 combine functions</td>
+</tr>
+
+</table>
+
+
+<!-- ================= MISCONFIGURATIONS ================= -->
+
+
+<!-- ================= SECRETS ================= -->
+
+
+
+
+
+
+<!-- ================= VULNERABILITIES ================= -->
+
+<h1>Vulnerabilities</h1>
+<h2>Python</h2>
+<table>
+<tr>
+<th>Library</th>
+<th>ID</th>
+<th>Severity</th>
+<th>Installed</th>
+<th>Fixed</th>
+<th>Title</th>
+</tr>
+
+<tr>
+<td>Flask</td>
+<td>CVE-2023-30861</td>
+<td class="severity-HIGH">HIGH</td>
+<td>2.3.0</td>
+<td>2.3.2, 2.2.5</td>
+<td>flask: Possible disclosure of permanent session cookie due to missing Vary: Cookie header</td>
+</tr>
+
+<tr>
+<td>Flask</td>
+<td>CVE-2026-27205</td>
+<td class="severity-LOW">LOW</td>
+<td>2.3.0</td>
+<td>3.1.3</td>
+<td>flask: Flask: Information disclosure via improper caching of session data</td>
+</tr>
+
+<tr>
+<td>jaraco.context</td>
+<td>CVE-2026-23949</td>
+<td class="severity-HIGH">HIGH</td>
+<td>5.3.0</td>
+<td>6.1.0</td>
+<td>jaraco.context: jaraco.context: Path traversal via malicious tar archives</td>
+</tr>
+
+<tr>
+<td>pip</td>
+<td>CVE-2023-5752</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>23.0.1</td>
+<td>23.3</td>
+<td>pip: Mercurial configuration injectable in repo revision when installing via pip</td>
+</tr>
+
+<tr>
+<td>pip</td>
+<td>CVE-2025-8869</td>
+<td class="severity-MEDIUM">MEDIUM</td>
+<td>23.0.1</td>
+<td>25.3</td>
+<td>pip: pip missing checks on symbolic link extraction</td>
+</tr>
+
+<tr>
+<td>pip</td>
+<td>CVE-2026-1703</td>
+<td class="severity-LOW">LOW</td>
+<td>23.0.1</td>
+<td>26.0</td>
+<td>pip: pip: Information disclosure via path traversal when installing crafted wheel archives</td>
+</tr>
+
+<tr>
+<td>wheel</td>
+<td>CVE-2026-24049</td>
+<td class="severity-HIGH">HIGH</td>
+<td>0.45.1</td>
+<td>0.46.2</td>
+<td>wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking</td>
+</tr>
+
+<tr>
+<td>wheel</td>
+<td>CVE-2026-24049</td>
+<td class="severity-HIGH">HIGH</td>
+<td>0.45.1</td>
+<td>0.46.2</td>
+<td>wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking</td>
+</tr>
+
+</table>
+
+
+<!-- ================= MISCONFIGURATIONS ================= -->
+
+
+<!-- ================= SECRETS ================= -->
+
+
+
+
+
+
+<!-- ================= VULNERABILITIES ================= -->
+
+
+<!-- ================= MISCONFIGURATIONS ================= -->
+
+<h1>Misconfigurations</h1>
+<h2>app/Dockerfile</h2>
+<table>
+<tr>
+<th>ID</th>
+<th>Severity</th>
+<th>Title</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>DS-0002</td>
+<td class="severity-HIGH">HIGH</td>
+<td>Image user should not be 'root'</td>
+<td>Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.</td>
+</tr>
+
+<tr>
+<td>DS-0026</td>
+<td class="severity-LOW">LOW</td>
+<td>No HEALTHCHECK defined</td>
+<td>You should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.</td>
+</tr>
+
+</table>
+
+
+<!-- ================= SECRETS ================= -->
+
+
+
+
+
+
+<!-- ================= VULNERABILITIES ================= -->
+
+
+<!-- ================= MISCONFIGURATIONS ================= -->
+
+
+<!-- ================= SECRETS ================= -->
+
+<h1>Secrets</h1>
+<h2>/app/app.py</h2>
+<table>
+<tr>
+<th>File</th>
+<th>Rule ID</th>
+<th>Severity</th>
+<th>Title</th>
+<th>Category</th>
+<th>Line</th>
+</tr>
+
+
+
+<tr>
+<td>/app/app.py</td>
+<td>stripe-secret-token</td>
+<td class="severity-CRITICAL">CRITICAL</td>
+<td>Stripe Secret Key</td>
+<td>Stripe</td>
+<td>5</td>
+</tr>
+
+
+</table>
+
+
+
+
+</body>
+</html>
