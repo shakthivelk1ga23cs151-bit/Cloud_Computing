@@ -1,0 +1,23 @@
+docker-compose up -d
+docker-compose ps
+
+Terminal One
+docker exec -it kafka bash
+
+kafka-topics --create --topic test-topic --bootstrap-server localhost:9092 --partitioins 1 --replication-factor 1
+
+kafka-topics --list --bootstrap-server localhost:9092
+
+kafka-console-producer --broker-list localhost:9092 --topic test-topic
+
+> Welcome to GAT
+> This is program 05
+
+Terminal second
+
+docker exec -it kafka bash
+
+kafka-console-consumer --bootstrap-server localhost:9092 --topic test-topic --from-beginning
+
+
+
