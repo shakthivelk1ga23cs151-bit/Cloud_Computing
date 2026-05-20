@@ -3,11 +3,10 @@ gcloud init
 python --version
 
 | Python Version | Runtime              |
-| -------------- | -------------------- |
-| Python 3.9     | `runtime: python39`  |
+| -------------- | -------------------- |  
 | Python 3.10    | `runtime: python310` |
 | Python 3.11    | `runtime: python311` |
-| Python 3.13    | `runtime: python313` |
+
 
 gcloud components install app-engine-python
 
@@ -15,6 +14,7 @@ pip install flask
 
 flask --version or python -m flask --version
 
+this will only work on python310 and python311
 python "C:\Users\shakt\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py" app.yaml
 
 py -0
