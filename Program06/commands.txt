@@ -1,0 +1,19 @@
+docker build -t flask-app .
+
+docker images
+
+docker tag flask-app shakthivelk24/flask-app:latest
+
+docker swarm init
+
+docker node ls
+
+docker stack deploy -c docker-compose.yml flaskstack
+
+docker stack services flaskstack
+
+docker stack ps flaskstack
+
+docker stack rm flaskstack
+
+docker swarm leave --force
