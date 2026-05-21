@@ -21,6 +21,9 @@ py -0
 
 py -3.11 "C:\Users\shakt\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py" app.yaml
 
+"the below path will be same in the 
+\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin\dev_appserver.py"
+
 gcloud app deploy
 
 gcloud app browse
