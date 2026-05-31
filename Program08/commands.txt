@@ -1,0 +1,23 @@
+pip install localstack
+set LOCALSTACK_AUTH_TOKEN=ls-CEREqAdu-8792-Rowu-YAXi-5714loRE3c4d(token)
+localstack start
+
+pip3 install awscli
+aws configure 
+
+S3
+aws --endpoint-url=http://localhost:4566 s3 mb s3://dept-cse 
+aws --endpoint-url=http://localhost:4566 s3 ls 
+echo "Hello LocalStack" > test.txt
+aws --endpoint-url=http://localhost:4566 s3 cp test.txt s3://dept-cse 
+aws s3 rm s3://dept-cse --recursive --endpoint-url=http://localhost:4566 
+
+EC2
+aws --endpoint-url=http://localhost:4566 ec2 create-key-pair --key-name test-key 
+aws --endpoint-url=http://localhost:4566 ec2 describe-images
+                      image-id:id 
+aws --endpoint-url=http://localhost:4566 ec2 run-instances --image-id ami-0fa96a91a85e7d4a2(id) --instance-type t2.micro --key-name test-key
+aws --endpoint-url=http://localhost:4566 ec2 describe-instances 
+aws --endpoint-url=http://localhost:4566 ec2 stop-instances --instance-ids i-5c98f64b2af6c282c(instance-id)
+aws --endpoint-url=http://localhost:4566 ec2 terminate-instances --instance-ids i-5c98f64b2af6c282c(instance-id)
+aws --endpoint-url=http://localhost:4566 ec2 delete-key-pair --key-name test-pair 
